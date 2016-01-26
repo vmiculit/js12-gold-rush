@@ -8,41 +8,23 @@ body {
 
 .map-image{
 	display: block;
-	width:	1200px;
+    width: 1200px;
 }
 
 
 .map-marker {
-
 	position: absolute;
-    /*top: 280.707px;
-    left: 184.055px;*/
-    margin-left: 0px;
-    margin-top: 0px;
-    z-index: 1;
-
 }
 
 .dot {
-	border: 3px solid #fff601;
-    background-color:red;
-    border-radius: 30px;
-    height: 5px;
-    width: 5px;
-    position: absolute;
-  /*  top: -25px;
-    left: -25px;*/
-    z-index: 1;
-    opacity: 1;
-}
-
-.pulse {
-    width: 10px;
-    height: 10px;
-    border: 5px solid #f7f14c;
-	border-radius: 30px;
-    background-color: #716f42;
-    z-index: 10;
+	border: 5px solid #fff601;
+    background-color:green;
+    border-radius: 20px;
+    height: 14px;
+    width: 14px;
     position: absolute;
 }
 
+.custom {
+    cursor: url(hdkY22W.png), auto;
+}

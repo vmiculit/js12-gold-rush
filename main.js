@@ -6,16 +6,23 @@ angular.module("js12")
 
 		$scope.goldFinds = []
 
-
 		$scope.mouseClick = function(event) {
-			var x = event.clientX - 5
-			var y = event.clientY - 5
-			var id = x * y
-			$scope.goldFinds.push({id: id,
-							x: x,
-							y: y})
-			console.log($scope.goldFinds)
+			var positionOffset = 14
+			var x = event.pageX - positionOffset
+			var y = event.pageY - positionOffset
+
+			$scope.goldFinds.push({ x: x, y: y})
+		}
+
+		$scope.removeMarker = function(idx) {
+			$scope.goldFinds.splice(idx, 1)
 		}
 
 	}])
-//test
+
+			
+
+
+
+
+

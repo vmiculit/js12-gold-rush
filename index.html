@@ -12,20 +12,16 @@
 </head>
 <body ng-controller="js12Troller">
 
-<div ng-click="mouseClick($event)" class="image-container">
+<div ng-click="mouseClick($event)" class="image-container custom">
 	<img class="map-image" src="topo-co.jpg">
 </div>
 
 <div ng-repeat = "gold in goldFinds">
-	<div style = "left : {{gold.x}}px; top: {{gold.y}}px;" class="map-marker">
-
+	<div ng-click = "removeMarker($index)"  style = "left : {{gold.x}}px; top: {{gold.y}}px;" class="map-marker">
 		<div class="dot"></div>
-<!-- 		<div class="pulse"></div>
- -->	</div>
+	</div>
 </div>
 
 </body>
 
 </html>
-
-<!-- style = "left : {{gold.x}}; top: {{gold.y}};" -->
