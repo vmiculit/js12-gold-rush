@@ -17,9 +17,28 @@
 </div>
 
 <div ng-repeat = "gold in goldFinds">
-	<div ng-click = "removeMarker($index)"  style = "left : {{gold.x}}px; top: {{gold.y}}px;" class="map-marker">
-		<div class="dot"></div>
+
+	<div 	ng-mouseover="displayNote($index)" 
+			ng-mouseleave="hideNote($index)" 
+			ng-click = "removeMarker($index)"  
+			style = "left : {{gold.x}}px; top: {{gold.y}}px;" 
+			class="map-marker">
+
+		<div 	class="dot"></div>
+
+		<div 	ng-show="gold.shownote"
+				ng-bind="gold.notes" 
+				class="comment-box"></div>
+		<form 	ng-submit="addNote($index, placeNote)"
+				ng-show="gold.showinput">
+			<input 	type="text"
+					class="input-box"
+					ng-model="placeNote"></input>
+			<button	class="submit-button">Submit</button>
+		</form>
+
 	</div>
+
 </div>
 
 </body>

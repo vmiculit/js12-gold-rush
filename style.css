@@ -28,3 +28,23 @@ body {
 .custom {
     cursor: url(hdkY22W.png), auto;
 }
+
+.comment-box {
+    position: relative;
+    background-color: #ecf0f1;
+    border: 2px solid #e74c3c;
+    padding: 8px;
+    top: 30px;
+    left: 10px;
+
+}
+
+.input-box {
+    position: relative;
+    left: 30px;
+}
+
+.submit-button {
+    position: relative;
+    left: 30px;
+}
