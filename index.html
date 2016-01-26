@@ -16,11 +16,16 @@
 	<img class="map-image" src="topo-co.jpg">
 </div>
 
-<div class="map-marker">
-	<div class="dot"></div>
-	<div class="pulse"</div>
+<div ng-repeat = "gold in goldFinds">
+	<div style = "left : {{gold.x}}px; top: {{gold.y}}px;" class="map-marker">
+
+		<div class="dot"></div>
+<!-- 		<div class="pulse"></div>
+ -->	</div>
 </div>
 
 </body>
 
 </html>
+
+<!-- style = "left : {{gold.x}}; top: {{gold.y}};" -->
