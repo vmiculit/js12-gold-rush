@@ -15,7 +15,8 @@ angular.module("js12")
 			$scope.goldFinds.push({ x: x, y: y, notes: notes, shownote: false, showinput: true})
 			console.log($scope.goldFinds)
 		}
-
+			// testing my github connectivity
+			
 		$scope.removeMarker = function(idx) {
 			if ($scope.goldFinds[idx].notes != "") {
 			$scope.goldFinds.splice(idx, 1)
